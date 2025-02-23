@@ -1,32 +1,75 @@
-# 👋 Hi, I'm Gamal Abd Al Nasser Mohamed!  
+# 🚆 **Railway Data Analysis Project**
 
-## 🚀 About Me  
-🔬 **Biotechnologist** | 💻 **Aspiring Bioinformatician & Data Analyst** | 📊 **Power BI Enthusiast**  
+## 🎯 **Project Overview**
+This project is part of the **Core Analytics DEPI Final Project**, focusing on **railway data analysis** using **Python, Power Query, and Power BI**. The objective is to **clean, transform, and model railway data** to extract insights that enhance operational efficiency and decision-making in railway systems.
 
-I am passionate about leveraging **data science, bioinformatics, and AI** to drive innovation in biotechnology and healthcare. With a strong foundation in **biotech, Python, and data analysis**, I aim to bridge the gap between **biology and computational science**.  
+---
 
-### 🔹 **What I Do**  
-✔️ Analyze complex datasets using **Power BI, SQL, and Python**  
-✔️ Perform **data annotation & AI model training** for intelligent automation  
-✔️ Explore **bioinformatics** and computational biology for medical insights  
-✔️ Apply **digital marketing** skills to enhance data-driven decision-making  
+## 📂 **Repository Structure**
+```
+📁 Core-Analytics_DEPI_Final_Project
+│-- 📄 railway.csv                 # Raw railway data
+│-- 📄 railway_data_dictionary.csv  # Column descriptions
+│-- 📁 scripts                      # Python scripts for data cleaning
+│-- 📁 power_query                  # Power Query transformations
+│-- 📁 power_bi                      # Power BI models and dashboards
+│-- 📄 README.md                    # Project documentation
+```
 
-### 🏆 **Achievements**  
-- 🎓 **Biotechnology Graduate (GPA 3.89) | Misr University for Science and Technology**  
-- 📜 **Python Data Science Certification | University of Michigan (Coursera)**  
-- 🏅 **Google Data Analytics & Digital Marketing Certifications**  
-- 🎯 **DEPI & DBi Scholarship Holder for Data Analysis**  
+---
 
-### 📌 **Tech Stack & Tools**  
-- **Programming**: Python (Pandas, NumPy, Matplotlib), SQL  
-- **Data Visualization**: Power BI, Excel, Tableau  
-- **Bioinformatics**: Biopython, R  
-- **Machine Learning**: Scikit-learn, TensorFlow (Basic)  
-- **Other Skills**: Data Cleaning, ETL, Dashboarding, Reporting  
+## 🔄 **Workflow**
+### 🚀 1️⃣ Data Cleaning (**Python**)
+✔ **Handle missing values, duplicates, and inconsistencies**  
+✔ **Standardize data formats**  
+✔ **Export cleaned data for further processing**  
 
-### 📫 **Let's Connect!**  
-📩 **Email**: gamal.a.a.mohamed@gmail.com  
-📱 **LinkedIn**: [linkedin.com/in/gamal-abd-al-nasser](#)  
-💻 **GitHub**: [[github.com/yourusername](https://github.com/Gamal-Abdal-Nasser)](#)  
+### ⚡ 2️⃣ Data Transformation (**Power Query**)
+✔ **Automate repetitive cleaning steps**  
+✔ **Prepare data for modeling**  
 
-🚀 Always open to **collaborations & learning opportunities** in **bioinformatics, AI, and data science**!  
+### 📊 3️⃣ Data Modeling & Visualization (**Power BI**)
+✔ **Build a structured data model**  
+✔ **Create interactive dashboards and reports**  
+✔ **Provide actionable insights for railway operations**  
+
+---
+
+## 🛠️ **Tools & Technologies**
+- 🐍 **Python** (Pandas, NumPy) – for data preprocessing
+- ⚡ **Power Query** – for ETL and transformations
+- 📊 **Power BI** – for modeling and visualizations
+- 🗂 **SQL** – for structured data storage and retrieval
+
+---
+
+## 💻 **How to Use**
+### 📥 Clone the repository:
+```bash
+git clone https://github.com/Gamal-Abdal-Nasser/Core-Analytics_DEPI_Final_Project.git
+cd Core-Analytics_DEPI_Final_Project
+```
+### 🛠️ Run Python scripts for data cleaning:
+```bash
+python scripts/data_cleaning.py
+```
+### 📊 Load cleaned data into **Power Query and Power BI**
+- **Open Power Query** to apply transformations
+- **Load the data into Power BI** to visualize insights
+
+---
+
+## 🚀 **Future Enhancements**
+✅ **Advanced predictive analytics using Machine Learning**  
+✅ **Integration with live railway data sources**  
+✅ **Optimized dashboard performance**  
+✅ **Automated reporting system for real-time insights**  
+
+---
+
+## 📜 **License**
+This project is **open-source** and available under the **MIT License**.
+
+---
+
+🔗 **Repository Link:** [GitHub - Core-Analytics_DEPI_Final_Project](https://github.com/Gamal-Abdal-Nasser/Core-Analytics_DEPI_Final_Project.git)
