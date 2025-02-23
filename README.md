@@ -27,6 +27,6 @@ I am passionate about leveraging **data science, bioinformatics, and AI** to dri
 ### 📫 **Let's Connect!**  
 📩 **Email**: gamal.a.a.mohamed@gmail.com  
 📱 **LinkedIn**: [linkedin.com/in/gamal-abd-al-nasser](#)  
-💻 **GitHub**: [github.com/yourusername](#)  
+💻 **GitHub**: [[github.com/yourusername](https://github.com/Gamal-Abdal-Nasser)](#)  
 
 🚀 Always open to **collaborations & learning opportunities** in **bioinformatics, AI, and data science**!  
