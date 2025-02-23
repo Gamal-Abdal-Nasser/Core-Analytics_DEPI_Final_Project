@@ -1,53 +1,60 @@
 # 🚆 Railway Data Analysis Project
 
 ## 📌 Project Overview
-This project is part of the **Core Analytics DEPI Final Project**, focusing on **railway data analysis** using **Python, Power Query, and Power BI**. The main goal is to clean, process, and model railway-related data to gain insights and improve operational efficiency.
+This project is part of the **Core Analytics DEPI Final Project**, focusing on **railway data analysis** using **Python, Power Query, and Power BI**. The goal is to clean, transform, and model railway data to gain insights and improve operational efficiency.
 
 ## 📂 Repository Structure
-- **`railway.csv`** – Raw railway data
-- **`railway_data_dictionary.csv`** – Description of dataset columns
-- **`scripts/`** – Contains Python scripts for data cleaning
-- **`power_query/`** – Power Query transformations
-- **`power_bi/`** – Power BI modeling and dashboards
-- **`README.md`** – Project documentation
+```
+📁 Core-Analytics_DEPI_Final_Project
+│-- 📄 railway.csv                 # Raw railway data
+│-- 📄 railway_data_dictionary.csv  # Column descriptions
+│-- 📁 scripts                      # Python scripts for data cleaning
+│-- 📁 power_query                  # Power Query transformations
+│-- 📁 power_bi                      # Power BI models and dashboards
+│-- 📄 README.md                    # Project documentation
+```
 
-## 🛠️ Workflow
+## 🔄 Workflow
 ### 1️⃣ Data Cleaning (Python)
-- Handle missing values, duplicates, and inconsistencies
-- Standardize data formats
-- Export cleaned data for further processing
+✔ Handle missing values, duplicates, and inconsistencies  
+✔ Standardize data formats  
+✔ Export cleaned data for further processing  
 
 ### 2️⃣ Data Transformation (Power Query)
-- Automate repetitive cleaning steps
-- Prepare data for modeling
+✔ Automate repetitive cleaning steps  
+✔ Prepare data for modeling  
 
 ### 3️⃣ Data Modeling & Visualization (Power BI)
-- Build a structured data model
-- Create interactive dashboards and reports
+✔ Build a structured data model  
+✔ Create interactive dashboards and reports  
 
-## 🔧 Tools & Technologies
-- **Python** (Pandas, NumPy) – for data preprocessing
-- **Power Query** – for ETL and transformations
-- **Power BI** – for modeling and visualizations
+## 🛠️ Tools & Technologies
+- 🐍 **Python** (Pandas, NumPy) – for data preprocessing
+- ⚡ **Power Query** – for ETL and transformations
+- 📊 **Power BI** – for modeling and visualizations
 
 ## 🚀 How to Use
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Gamal-Abdal-Nasser/Core-Analytics_DEPI_Final_Project.git
-   cd Core-Analytics_DEPI_Final_Project
-   ```
-2. Run the Python scripts to clean the data.
-3. Load the cleaned data into Power Query for further processing.
-4. Open the Power BI file to explore insights and dashboards.
+### Clone the repository:
+```bash
+git clone https://github.com/Gamal-Abdal-Nasser/Core-Analytics_DEPI_Final_Project.git
+cd Core-Analytics_DEPI_Final_Project
+```
+### Run Python scripts for data cleaning:
+```bash
+python scripts/data_cleaning.py
+```
+### Load cleaned data into Power Query and Power BI
+- Open Power Query to apply transformations
+- Load the data into Power BI to visualize insights
 
 ## 📌 Future Enhancements
-- Advanced predictive analytics using Machine Learning
-- Integration with live railway data sources
-- Optimized dashboard performance
+✅ Advanced predictive analytics using Machine Learning  
+✅ Integration with live railway data sources  
+✅ Optimized dashboard performance  
 
 ## 📜 License
-This project is open-source and available under the MIT License.
+This project is open-source and available under the **MIT License**.
 
 ---
-📌 **Repository Link:** [GitHub - Core-Analytics_DEPI_Final_Project](https://github.com/Gamal-Abdal-Nasser/Core-Analytics_DEPI_Final_Project.git)
+🔗 **Repository Link:** [GitHub - Core-Analytics_DEPI_Final_Project](https://github.com/Gamal-Abdal-Nasser/Core-Analytics_DEPI_Final_Project.git)
 
