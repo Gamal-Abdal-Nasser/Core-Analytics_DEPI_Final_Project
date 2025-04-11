@@ -1,0 +1,37 @@
+# UK Train Rides - Data Analysis Project
+
+This project focuses on analyzing train rides in the UK using Python, Power Query, and Tableau. The analysis includes data cleaning, transformation, and visualization to provide valuable insights.
+
+## 🔗 Open in Google Colab
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1zjp7k90hd1Ywe_U-OOR9IulqHQTSY8kR?usp=sharing)
+
+## 📌 Project Highlights
+
+- 🚆 **Data Source:** UK train rides dataset
+- 🧹 **Data Cleaning:** Performed with Python (pandas)
+- 🔄 **Transformation:** Power Query for automation
+- 📊 **Visualization:** Tableau dashboards
+- 📁 **Schema:** Star schema with fact and dimension tables
+
+## 📂 Tools Used
+
+- Python
+- Jupyter / Google Colab
+- Power Query
+- SQL
+- Tableau
+
+## 💡 How to Use
+
+1. Click the "Open in Colab" badge above to run the code.
+2. Follow the steps in the notebook to replicate the analysis.
+3. Download or interact with the Tableau visualizations.
+
+## 📞 Contact
+
+For questions or collaborations, reach out via [LinkedIn](#) or email.
+
+---
+
+Let me know if you want this adjusted to include images, ERD diagrams, SQL schemas, or more project sections!
