@@ -1,63 +1,59 @@
 # Core Analytics DEPI Final Project
-![southeastern-javelin-train-st-pancras-intl-desktop_1x](https://github.com/user-attachments/assets/5f0869a2-6b57-4c7c-bc27-f50dd202cc97)
 
+## 🚆 Overview
 
-## 📌 Overview
-Harness the power of data-driven insights with this cutting-edge railway analytics project. Utilizing **Python** for data cleaning, **Power Query** for streamlined ETL processes, and **Power BI** for intuitive visualizations, this project transforms raw operational data into actionable intelligence. The goal is to enhance efficiency, optimize resource allocation, and support strategic decision-making in railway operations.
+This project leverages data analytics tools to transform raw train ride data into actionable insights. We utilized **Python** for data cleaning, **Power Query** for both data modeling and cleaning, **SQL** for database modeling and querying, and **Tableau** for creating predictive visualizations and interactive dashboards.
 
-## 🚀 Key Features
+---
 
-### ✅ Comprehensive Data Processing
-- Cleaning and preprocessing raw datasets with Python.
-- Handling missing values, duplicates, and format inconsistencies.
+## 🔑 Key Features
 
-### ✅ Automated ETL Workflow
-- Leveraging Power Query to automate data transformation steps.
-- Ensuring consistency and accuracy across datasets.
+### ✅ Data Processing
+- **Python**: Data cleaning using libraries such as Pandas and NumPy.
+- **Power Query**: Streamlined ETL processes and data cleaning.
+  
+### ✅ Automated ETL & Modeling
+- **Power Query**: Data transformation and modeling for structured analysis.
+- **SQL**: Database schema design and queries for data extraction and manipulation.
 
-### ✅ Dynamic Data Visualization
-- Developing interactive Power BI dashboards.
-- Providing deep insights into trends, performance, and operational efficiency.
+### ✅ Interactive Visualization & Prediction
+- **Tableau**: Visualizations and dashboards, including predictive analytics for identifying travel trends and delays.
+
+---
 
 ## 🛠️ Technologies Used
-- **Python** (Pandas, NumPy, Matplotlib, Seaborn) – Data Cleaning & Analysis.
-- **Power Query** (Excel/Power BI) – ETL & Data Transformation.
-- **Power BI** – Data Visualization & Reporting.
 
-## 📂 Project Structure
+- **Python**: Data cleaning and preprocessing.
+- **Power Query**: Data modeling, transformation, and cleaning.
+- **SQL**: Database modeling and querying.
+- **Tableau**: Data visualization and predictive analytics.
 
-The repository includes the following key files and directories:
+---
 
-- `0.0.Project Over view.md`: Provides an overview of the project's objectives, scope, and deliverables.
-- `1.0.Project Planning & Management(Proposal).md`: Details the initial project proposal, including goals and expected outcomes.
-- `1.1.Gantt_Chart.png`: Visual representation of the project timeline and milestones.
-- `1.2.Project Planning & Management(Planl).md`: Comprehensive project plan outlining tasks, schedules, and resources.
-- `1.3.Project Planning & Management(Task Rolles).md`: Defines team roles and responsibilities for project tasks.
-- `1.4.Python cleaning code.py`: Python script for data cleaning and preprocessing.
-- `2.0.Stakeholder Analysis & Requirements.md`: Analysis of stakeholders and documentation of project requirements.
-- `3.0.System Analysis & Design.md`: System architecture and design specifications.
-- `3.1.Data modeling.png`: Diagram illustrating the data modeling approach.
-- `About Me.md`: Information about the project author.
-- `Group Members.md`: Details about the team members involved in the project.
+## 📁 Project Structure
 
-## 📖 Getting Started
+| File/Folder                              | Description |
+|------------------------------------------|-------------|
+| `0.0. Dashboard download .MD`            | Link to download the final Tableau dashboard |
+| `1.0.Project Planning & Management(Proposal).md` | Initial project proposal outlining goals |
+| `1.1.Gantt_Chart.png`                    | Project timeline visual |
+| `1.2.Project Planning & Management(Planl).md` | Full project plan with milestones |
+| `1.3.Project Planning & Management(Task Rolles).md` | Team role assignments |
+| `1.4.Python cleaning code.py`            | Python code for data cleaning |
+| `1.5 Python Q&A Viz .MD`                 | Exploratory data analysis using Python |
+| `2.0.Stakeholder Analysis & Requirements.md` | Stakeholder analysis and requirements |
+| `3.0.System Analysis & Design .md`       | System architecture design |
+| `3.1.Data modeling by Power Query.png`   | Data model designed in Power Query |
+| `3.2 SQL Modeling.png`                   | SQL schema diagram |
+| `4. SQL Full Code .MD`                   | SQL code for data extraction |
+| `Core-analytics.twbx`                    | Tableau workbook with predictive visualizations |
+| `About Me.md`                            | Information about the project owner |
+| `Group Members.md`                       | Team member details |
 
-### 1️⃣ Clone the repository
-```sh
-git clone https://github.com/Gamal-Abdal-Nasser/Core-Analytics_DEPI_Final_Project.git
-2️⃣ Install dependencies
-sh
-Copy
-Edit
-pip install -r requirements.txt
-3️⃣ Run the project
-Load the dataset and execute the Python scripts for data preprocessing.
-Open the Power BI dashboard to explore visual insights.
-🔮 Future Enhancements
-🤖 Integrating machine learning models for predictive analytics.
-📊 Expanding datasets to include more operational metrics.
-🔄 Enhancing automation through advanced data pipeline integration.
-✨ Author
-👤 Gamal Abd al Nasser
+---
 
-📩 For inquiries, collaboration, or feedback, feel free to reach out!
+## 🚀 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Gamal-Abdal-Nasser/UK_Train_Rides.git
