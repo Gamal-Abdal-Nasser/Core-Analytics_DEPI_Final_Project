@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Gamal Abd Al Nasser Mohamed!  
 
 ## About Me  
-🔬 **Biotechnologist** | 💻 **Aspiring Bioinformatician & Data Analyst** | 📊 **Power BI Enthusiast**  
+🔬 **Biotechnologist** | **Aspiring Bioinformatician & Data Analyst** 
 
 I am passionate about leveraging **data science, bioinformatics, and AI** to drive innovation in biotechnology and healthcare. With a strong foundation in **biotech, Python, and data analysis**, I aim to bridge the gap between **biology and computational science**.  
 
@@ -17,7 +17,7 @@ I am passionate about leveraging **data science, bioinformatics, and AI** to dri
 - 🏅 **Google Data Analytics & Digital Marketing Certifications**  
 - 🎯 **DEPI & DBi Scholarship Holder for Data Analysis**  
 
-### 📌 **Tech Stack & Tools**  
+### **Tech Stack & Tools**  
 - **Programming**: Python (Pandas, NumPy, Matplotlib), SQL  
 - **Data Visualization**: Power BI, Excel, Tableau  
 - **Bioinformatics**: Biopython, R  
