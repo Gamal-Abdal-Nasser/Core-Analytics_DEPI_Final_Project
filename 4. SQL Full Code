@@ -1,0 +1,115 @@
+# 🎫 SQL Star Schema for Ticketing System
+
+## 🧱 Table Creation
+
+```sql
+-- Create Dim_Purchase
+CREATE TABLE Dim_Purchase (
+    Purchase_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Date_of_Purchase DATE,
+    Time_of_Purchase TIME,
+    Purchase_Type VARCHAR(50),
+    Payment_Method VARCHAR(50),
+    Railcard VARCHAR(50)
+);
+
+-- Create Dim_Journey
+CREATE TABLE Dim_Journey (
+    Journey_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Date_of_Journey DATE,
+    Departure_Time TIME,
+    Arrival_Time TIME,
+    Actual_Arrival_Time TIME,
+    Reason_for_Delay VARCHAR(50)
+);
+
+-- Create Dim_Ticket
+CREATE TABLE Dim_Ticket (
+    Ticket_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Ticket_Class VARCHAR(50),
+    Ticket_Type VARCHAR(50)
+);
+
+-- Create Dim_Station
+CREATE TABLE Dim_Station (
+    Station_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Departure_Station VARCHAR(50),
+    Arrival_Destination VARCHAR(50),
+    Stations_Name VARCHAR(50)
+);
+
+-- Create Fact_Transactions
+CREATE TABLE Fact_Transactions (
+    Transaction_ID VARCHAR(50) PRIMARY KEY,
+    Purchase_ID INT NULL,
+    Journey_ID INT NULL,
+    Ticket_ID INT NULL,
+    Station_ID INT NULL,
+    Price DECIMAL(18,10),
+    Journey_Status VARCHAR(50),
+    Refund_Request VARCHAR(50),
+    FOREIGN KEY (Purchase_ID) REFERENCES Dim_Purchase(Purchase_ID),
+    FOREIGN KEY (Journey_ID) REFERENCES Dim_Journey(Journey_ID),
+    FOREIGN KEY (Ticket_ID) REFERENCES Dim_Ticket(Ticket_ID),
+    FOREIGN KEY (Station_ID) REFERENCES Dim_Station(Station_ID)
+);
+
+________________________________________________________________________________________________________________________
+-- Insert into Dim_Purchase
+INSERT INTO Dim_Purchase (Date_of_Purchase, Time_of_Purchase, Purchase_Type, Payment_Method, Railcard)
+SELECT DISTINCT Date_of_Purchase, Time_of_Purchase, Purchase_Type, Payment_Method, Railcard
+FROM [Power query cleaned];
+
+-- Insert into Dim_Journey
+INSERT INTO Dim_Journey (Date_of_Journey, Departure_Time, Arrival_Time, Actual_Arrival_Time, Reason_for_Delay)
+SELECT DISTINCT Date_of_Journey, Departure_Time, Arrival_Time, Actual_Arrival_Time, Reason_for_Delay
+FROM [Power query cleaned];
+
+-- Insert into Dim_Ticket
+INSERT INTO Dim_Ticket (Ticket_Class, Ticket_Type)
+SELECT DISTINCT Ticket_Class, Ticket_Type
+FROM [Power query cleaned];
+
+-- Insert into Dim_Station
+INSERT INTO Dim_Station (Departure_Station, Arrival_Destination, Stations_Name)
+SELECT DISTINCT Departure_Station, Arrival_Destination, Stations_Name
+FROM [Power query cleaned];
+
+INSERT INTO Fact_Transactions (Transaction_ID, Purchase_ID, Journey_ID, Ticket_ID, Station_ID, Price, Journey_Status, Refund_Request)
+SELECT 
+    t.Transaction_ID,
+    dp.Purchase_ID,
+    dj.Journey_ID,
+    dt.Ticket_ID,
+    ds.Station_ID,
+    t.Price,
+    t.Journey_Status,
+    t.Refund_Request
+FROM [Power query cleaned] t
+LEFT JOIN Dim_Purchase dp 
+    ON t.Date_of_Purchase = dp.Date_of_Purchase 
+    AND t.Time_of_Purchase = dp.Time_of_Purchase 
+    AND t.Purchase_Type = dp.Purchase_Type 
+    AND t.Payment_Method = dp.Payment_Method 
+    AND ISNULL(t.Railcard, '') = ISNULL(dp.Railcard, '')
+LEFT JOIN Dim_Journey dj 
+    ON t.Date_of_Journey = dj.Date_of_Journey 
+    AND t.Departure_Time = dj.Departure_Time 
+    AND (t.Arrival_Time = dj.Arrival_Time OR (t.Arrival_Time IS NULL AND dj.Arrival_Time IS NULL))
+    AND (t.Actual_Arrival_Time = dj.Actual_Arrival_Time OR (t.Actual_Arrival_Time IS NULL AND dj.Actual_Arrival_Time IS NULL))
+    AND ISNULL(t.Reason_for_Delay, '') = ISNULL(dj.Reason_for_Delay, '')
+LEFT JOIN Dim_Ticket dt 
+    ON t.Ticket_Class = dt.Ticket_Class 
+    AND t.Ticket_Type = dt.Ticket_Type
+LEFT JOIN Dim_Station ds 
+    ON t.Departure_Station = ds.Departure_Station 
+    AND t.Arrival_Destination = ds.Arrival_Destination 
+    AND ISNULL(t.Stations_Name, '') = ISNULL(ds.Stations_Name, '');
+________________________________________________________________________________________________________________________
+SELECT * FROM Fact_Transactions
+WHERE Purchase_ID IS NULL 
+   OR Journey_ID IS NULL 
+   OR Ticket_ID IS NULL 
+   OR Station_ID IS NULL;
+
+
