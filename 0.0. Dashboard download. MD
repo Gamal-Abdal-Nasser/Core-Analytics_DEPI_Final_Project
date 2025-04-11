@@ -25,23 +25,8 @@ Built using Tableau to explore key performance indicators and communicate trends
 Check out the live interactive version of the dashboard here:
 
 👉 [View on Tableau Public](https://public.tableau.com/shared/QDNKTJXWF?:display_count=n&:origin=viz_share_link)
-
-## 📂 Files
-
-- `Core-analytics.twbx`: Main Tableau workbook file.
-- `images/dashboard-preview.png`: A preview of the dashboard (optional).
-
-## 📷 Dashboard Preview
-
-![Dashboard Preview](images/dashboard-preview.png)
-
-## 📌 How to Use
-
 1. Download the `.twbx` file.
 2. Open it in Tableau Desktop.
 3. Explore different views and filters in the story dashboard.
 
 ---
-
-**Created by:** Little Jimmy  
-**Year:** 2025  
