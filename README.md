@@ -1,6 +1,7 @@
 # Core Analytics DEPI Final Project
 
 ## 🚆 Overview
+![Railway Image](https://www.newsnationnow.com/wp-content/uploads/sites/108/2023/12/65710cfd0ebe85.03548942.jpeg?w=876&h=493&crop=1)
 
 This project leverages data analytics tools to transform raw train ride data into actionable insights. We utilized **Python** for data cleaning, **Power Query** for both data modeling and cleaning, **SQL** for database modeling and querying, and **Tableau** for creating predictive visualizations and interactive dashboards.
 
