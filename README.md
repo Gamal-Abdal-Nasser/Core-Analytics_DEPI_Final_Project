@@ -50,11 +50,3 @@ This project leverages data analytics tools to transform raw train ride data int
 | `Core-analytics.twbx`                    | Tableau workbook with predictive visualizations |
 | `About Me.md`                            | Information about the project owner |
 | `Group Members.md`                       | Team member details |
-
----
-
-## Getting Started
-
-1. Clone the repository:
-   ```bash
-   [git clone https://github.com/Gamal-Abdal-Nasser/UK_Train_Rides.git](https://github.com/Gamal-Abdal-Nasser/UK_Train_Rides.git)
